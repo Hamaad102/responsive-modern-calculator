@@ -18,7 +18,7 @@ function type(e){
           userInput.innerHTML=e.key;
         }
       }else if(e.keyCode>106){
-        if(userInput.innerHTML.slice(-1)!=='+' && userInput.innerHTML.slice(-1)!=='-' && userInput.innerHTML.slice(-1)!=='x' && userInput.innerHTML.slice(-1)!=='÷'){
+        if(userInput.innerHTML.slice(-1)!=='+' && userInput.innerHTML.slice(-1)!=='-' && userInput.innerHTML.slice(-1)!=='x' && userInput.innerHTML.slice(-1)!=='÷' && userInput.innerHTML.slice(-1)!=='.'){
           userInput.innerHTML+=e.key;
         }
       }else{
@@ -57,11 +57,11 @@ let plus = document.getElementById('plus').addEventListener('click',buttPress);
 
 function buttPress(e){
   if(userInput.innerHTML==='0'){
-    if(e.target.innerHTML!=='+' && e.target.innerHTML!=='-' && e.target.innerHTML!=='x' && e.target.innerHTML!=='÷'){
+    if(e.target.innerHTML!=='+' && e.target.innerHTML!=='-' && e.target.innerHTML!=='x' && e.target.innerHTML!=='÷' && e.target.innerHTML!=='.'){
       userInput.innerHTML=e.target.innerHTML;
     }
-  }else if(e.target.innerHTML==='+' || e.target.innerHTML==='-' || e.target.innerHTML==='x' || e.target.innerHTML==='÷'){
-    if(userInput.innerHTML.slice(-1)!=='+' && userInput.innerHTML.slice(-1)!=='-' && userInput.innerHTML.slice(-1)!=='x' && userInput.innerHTML.slice(-1)!=='÷'){
+  }else if(e.target.innerHTML==='+' || e.target.innerHTML==='-' || e.target.innerHTML==='x' || e.target.innerHTML==='÷' || e.target.innerHTML==='.'){
+    if(userInput.innerHTML.slice(-1)!=='+' && userInput.innerHTML.slice(-1)!=='-' && userInput.innerHTML.slice(-1)!=='x' && userInput.innerHTML.slice(-1)!=='÷' && userInput.innerHTML.slice(-1)!=='.'){
       userInput.innerHTML+=e.target.innerHTML;
     }
   }else{
@@ -84,8 +84,8 @@ function erase(){
 
 clear.addEventListener('mousedown', mouseD);
 clear.addEventListener('mouseup', mouseU);
-clearMobi.addEventListener('mousedown', mouseD);
-clearMobi.addEventListener('mouseup', mouseU);
+clearMobi.addEventListener('touchstart', mouseD);
+clearMobi.addEventListener('touchend', mouseU);
 
 function mouseD(){
   timer = setTimeout(wipe,1000);
