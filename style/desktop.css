@@ -126,3 +126,18 @@
     font-size: 7vw!important;
   }
 }
+
+@media only screen and (max-height:500px){
+  .fontStyle{
+    font-size: 10vh!important;
+  }
+  .fontStyleTwo{
+    font-size: 7vh!important;
+  }
+  .fontStyleTyper{
+    font-size: 7vh!important;
+  }
+  .fontStyleAns{
+    font-size: 7vh!important;
+  }
+}
