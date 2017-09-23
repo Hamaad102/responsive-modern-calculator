@@ -1,0 +1,152 @@
+@import url('mobile.css');
+@import url('desktop.css');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.fontStyle{
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  width: 33.33%;
+  height: 25%;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fontStyle:hover{
+  background-color: grey;
+}
+
+.fontStyleTwo {
+  font-family: 'Fira Sans', sans-serif;
+  color:#181a1a;
+  font-size: 35px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fontStyleTwo:hover{
+  background-color: rgba(255,255,255,0.75);
+}
+
+.fontStyleTyper{
+  font-family: 'Fira Sans', sans-serif;
+  height:50%;
+  width: 100%;
+  color:#181a1a;
+  opacity: 0.5;
+  font-size: 75px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  overflow-x: hidden;
+  letter-spacing: 2px;
+}
+
+.fontStyleAns{
+  font-family: 'Fira Sans', sans-serif;
+  height:50%;
+  width: 100%;
+  color:#181a1a;
+  font-size: 100px;
+  display: flex;
+  align-content: space-around;
+}
+
+.greyTile{
+  background-color: #212323;
+}
+
+.brack{
+  grid-area: brack;
+}
+
+.brackR{
+  grid-area: brackR;
+}
+
+.del{
+  grid-area: del;
+  font-size: 40px;
+}
+
+.sev{
+  grid-area: sev;
+}
+
+.eight{
+  grid-area: eight;
+}
+
+.nine{
+  grid-area: nine;
+}
+
+.four{
+  grid-area: four;
+}
+
+.five{
+  grid-area: five;
+}
+
+.six{
+  grid-area: six;
+}
+
+.one{
+  grid-area: one;
+}
+
+.two{
+  grid-area: two;
+}
+
+.three{
+  grid-area: three;
+}
+
+.peri{
+  grid-area: peri;
+}
+
+.zer{
+  grid-area: zer;
+}
+
+.equal{
+  grid-area: equal;
+}
+
+.divi{
+  grid-area: divi;
+}
+
+.multi{
+  grid-area: multi;
+}
+
+.minus{
+  grid-area: minus;
+}
+
+.plus{
+  grid-area: plus;
+}

@@ -1,0 +1,128 @@
+@media only screen and (min-width:960px){
+  .site{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "pad ansArea";
+  }
+
+  .ansArea{
+    grid-area: ansArea;
+    width: 69vw;
+    height:98vh;
+  }
+
+  .pad{
+    grid-area: pad;
+    width:30vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "numArea oper";
+  }
+
+  .numArea{
+    grid-area: numArea;
+    height: 100%;
+    width: 25vw;
+    background-color: #181a1a;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-template-rows: 25% 1fr 1fr 1fr 1fr 1fr 15%;
+    grid-template-areas:
+    ". . . . ."
+    ". brack brackR del ."
+    ". sev eight nine ."
+    ". four five six ."
+    ". one two three ."
+    ". zer peri equal ."
+    ". . . . .";
+    grid-gap: 15px;
+  }
+
+  .fontStyle{
+    height: 100%!important;
+    width: 100%!important;
+  }
+
+  .fontStyleTwo{
+    font-size: 45px!important;
+  }
+
+  .oper{
+    grid-area: oper;
+    height: 100%;
+    width: 5vw;
+    background-color: #00ffb4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 1fr 1fr 1fr 1fr 20%;
+    grid-template-areas:
+    ". "
+    "divi"
+    "multi"
+    "minus"
+    "plus"
+    ". ";
+  }
+
+  .deskHid {
+    display: none!important;
+  }
+
+  .greyDesk{
+    background-color: #212323;
+  }
+
+}
+
+@media only screen and (max-width:1366px){
+  .fontStyle{
+    font-size: 50px!important;
+  }
+  .del{
+    font-size: 35px!important;
+  }
+  .fontStyleAns{
+    font-size: 80px!important;
+  }
+  .fontStyleTyper{
+    font-size: 55px!important;
+  }
+}
+
+@media only screen and (max-width:1280px){
+  .fontStyleAns{
+    font-size: 70px!important;
+  }
+  .fontStyleTyper{
+    font-size: 55px!important;
+  }
+}
+
+@media only screen and (max-width:1110px){
+  .fontStyle{
+    font-size: 40px!important;
+  }
+  .del{
+    font-size: 25px!important;
+  }
+  .fontStyleAns{
+    font-size: 60px!important;
+  }
+  .fontStyleTyper{
+    font-size: 55px!important;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .fontStyleAns{
+    font-size: 8.5vw!important;
+  }
+  .fontStyleTyper{
+    font-size: 7vw!important;
+  }
+}
